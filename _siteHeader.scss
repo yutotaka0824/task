@@ -1,0 +1,246 @@
+/*====================================================================
+siteHeader
+====================================================================*/
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800;900&family=Noto+Sans+JP:wght@400;500;700;900&display=swap');
+
+.bg {
+  background-image: url(../../_assets/images/header/header_bg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+}
+
+.sm {
+  display: none;
+}
+
+.kv {
+  height: 81rem;
+
+
+  &__siteHeader {
+    height: 5.3rem;
+  }
+
+  &__siteHeader__inner {
+    width: 76.6%;
+    margin: 0 auto;
+    padding-top: 3.7rem;
+    position: relative;
+  }
+
+  &__siteHeader__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__siteHeader__logoImg {
+    width: 19.069rem;
+    height: 2.056rem;
+  }
+
+  &__siteHeader__contact__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column;
+    align-items: center;
+    height: 5.3rem;
+    text-align: center;
+  }
+
+  &__siteHeader__contact__phone {
+    font-size: 3.2rem;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    margin-top: -1.0rem;
+    font-family: 'Barlow', 'Noto sans JP', sans-serif;
+  }
+
+  &__siteHeader__contact__discussion {
+    font-size: 1.8rem;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    margin-top: -0.6rem;
+    font-family: "ヒラギノ角ゴ Pro W3", 'Noto sans JP', sans-serif;
+  }
+
+  &__ttl__box {
+    width: 37.71%;
+    height: auto;
+    margin-top: 13.7rem;
+    margin-left: 17rem;
+  }
+
+  &__ttl {
+    font-size: 5.4rem;
+    letter-spacing: 0.1em;
+    line-height: 1.48;
+    font-weight: 600;
+    color: #E8B600;
+    margin-bottom: 0;
+    font-family: "ヒラギノ角ゴシック", 'Noto sans JP', sans-serif;
+  }
+
+  &__ttl__color {
+    color: #3C280E;
+  }
+
+  &__subTtl__wrapper {
+    margin-top: 4rem;
+  }
+
+  &__subTtl {
+    margin-top: 4rem;
+    width: 52.5rem;
+  }
+
+  &__subTtl {
+    font-size: 2.4rem;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 0;
+    padding-bottom: 0rem;
+    font-family: "ヒラギノ角ゴシック", 'Noto sans JP', sans-serif;
+  }
+
+  // border //
+  mark {
+    background: linear-gradient(transparent 50%, rgba(232,182,0,0.7));
+  }
+
+  &__description {
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.86;
+    font-family: "ヒラギノ角ゴシック", 'Noto sans JP', sans-serif;
+    margin-top: 3rem;
+  }
+
+  // 背景画像 //
+  &__img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -100;
+  }
+}
+
+
+// スマートフォン //
+@media screen and (min-width: 375px) and (max-width: 767px) {
+
+  // kv //
+  body {
+    overflow-x: hidden;
+    position: absolute;
+    top: 0;
+  }
+
+  .bg {
+    background-image: none;
+  }
+
+  // スマホ用の改行 //
+  .sm {
+    display: block;
+  }
+
+  // pc用の改行 //
+  .pc {
+    display: none;
+  }
+
+  .kv {
+    height: 104.5rem;
+    width: 100%;
+
+    &__inner {
+      background-image: url(../../_assets/images/header/kv_bg_sm.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 48.3rem;
+    }
+
+    &__siteHeader {
+      height: 3.1rem;
+    }
+
+    &__siteHeader__inner {
+      margin-top: 2.5rem;
+      height: 100%;
+      width: 92.53%;
+      padding-top: 0;
+    }
+
+    &__siteHeader__nav {
+      height: 100%;
+      align-items: baseline;
+    }
+
+    &__siteHeader__logo {
+      width: 11.3rem;
+      height: 1.218rem;
+    }
+
+    // ロゴ //
+    &__siteHeader__logoImg {
+      width: 100%;
+      height: 100%;
+    }
+
+    &__siteHeader__contact__phone {
+      font-size: 2rem;
+    }
+
+    &__siteHeader__contact__discussion {
+      font-size: 1.2rem;
+    }
+
+    // 背景画像 //
+    &__img {
+      display: none;
+    }
+
+    &__ttl__box {
+      height: auto;
+      position: absolute;
+      top: 54.3rem;
+      width: 92%;
+      margin-top: 0;
+      margin-left: 1.5rem;
+      margin-right: 1.5rem;
+    }
+
+    &__ttl__wrapper {
+      margin: 0 auto;
+    }
+
+    &__ttl {
+      font-size: 4rem;
+      letter-spacing: 0.1em;
+      height: 4rem;
+    }
+
+    &__ttl02 {
+      padding-top: 1.6rem;
+    }
+
+    &__subTtl__wrapper {
+      margin-top: 3rem;
+    }
+
+    &__subTtl {
+      height: 6.4rem;
+      line-height: 1.66;
+    }
+
+    &__description {
+      margin-top: 3rem;
+      line-height: 1.75;
+    }
+  }
+}

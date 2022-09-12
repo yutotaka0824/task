@@ -1,0 +1,1339 @@
+/*====================================================================
+topPageFvSec
+====================================================================*/
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800;900&family=Noto+Sans+JP:wght@400;500;700;900&display=swap');
+
+body {
+    overflow-x: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+// sec01
+.sec01 {
+    height: 71.6rem;
+    position: relative;
+
+    // 見出し //
+    &__headLine {
+        font-size: 3.8rem;
+        font-weight: 600;
+        letter-spacing: 0.05em;
+        line-height: 1.5;
+        text-align: center;
+        font-family: "ヒラギノ角ゴシック", 'Noto sans JP', sans-serif;
+        margin-top: 8rem;
+    }
+
+    // 見出し上の点
+    &__dot__headLine {
+        display: inline-block;
+        position: relative;
+    }
+
+    &__dot__headLine::before {
+        position: absolute;
+        top: -3.5rem;
+        left: 50%;
+        transform: translate(-50%, 0);
+        color: #E8B600;
+        font-size: 1em;
+        content: "・";
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: normal;
+    }
+
+    &__img {
+        margin-top: 10.8rem;
+        margin-right: 6.1rem;
+        width: 36.3rem;
+        height: 34.2rem;
+    }
+
+    &__img__left {
+        width: 100%;
+        height: 100%;
+    }
+
+    &__list {
+        padding-top: 8rem;
+        width: 44.1%;
+    }
+
+    &__list__item {
+        height: 5.8rem;
+        background: #fffbef;
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+
+    // チェックアイコン //
+    &__list__checkImg {
+        padding-left: 2rem;
+    }
+
+    &__list__txt > span {
+        padding-left: 1.6rem;
+        font-size: 2rem;
+        font-weight: 600;
+        line-height: 1.8;
+        font-family: "ヒラギノ角ゴシック", 'Noto sans JP', sans-serif;
+    }
+
+    &:nth-child(n + 2) {
+        padding-top: 1rem;
+    }
+
+    &__bg__img {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+    &__bg__img--bottom {
+        width: 55.458rem;
+        height: 9.347rem;
+    }
+
+    &__bg--wrapper--bottom {
+        position: relative;
+    }
+
+    &__bg__wrapper {
+        width: 100%;
+        height: 5.33rem;
+        background-color: #E8B600;
+        opacity: 0.1;
+    }
+
+    &__bg--arrowBottom {
+        display: inline-block;
+        border-style: solid;
+        border-width: 5.33rem 8rem 0 8rem;
+        border-color: #fff transparent transparent transparent;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
+}
+
+
+// sec02
+.sec02 {
+    background-color:rgba(232,182,0,0.1);
+    height: 80.87rem;
+
+    &__ttl {
+        text-align: center;
+        padding-top: 6rem;
+    }
+
+    .sec02__headLine {
+        font-size: 4.2rem;
+        color: #3C280E;
+        font-weight: 600;
+        font-family: "ヒラギノ角ゴシック", 'Noto sans JP', sans-serif;
+
+        & mark {
+            background: linear-gradient(transparent 70%, rgba(232,182,0,0.7));
+        }
+    }
+
+    &__headLine__border {
+        display: block;
+        width: 100%;
+        border-top: 8px solid rgba(232,182,0,0.7);
+    }
+
+    &__box__wrapper {
+        padding-top: 7rem;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+
+    // box01
+    &__box__01 {
+        background-color: #fff;
+        width: 34rem;
+        height: 40.6rem;
+        margin: 0 4rem 0 4rem;
+    }
+
+    //box02
+    &__box__02 {
+        background-color: #fff;
+        width: 34rem;
+        height: 40.6rem;
+    }
+
+    // box03
+    &__box__03 {
+        background-color: #fff;
+        width: 34rem;
+        height: 40.6rem;
+        margin: 0 4rem 0 4rem;
+    }
+
+    &__box__img {
+        width: 24.1rem;
+        height: 15.6rem;
+        margin-top: 4rem;
+    }
+
+    // タイトル
+    &__box__headLine {
+        margin-top: 4.1rem;
+        font-size: 2rem;
+        font-weight: 600;
+        line-height: 1.5;
+        font-family: "ヒラギノ角ゴシック", 'Noto sans JP', sans-serif;
+    }
+
+    &__box__headLine__02 {
+        margin-top: 2.6rem;
+        font-size: 2rem;
+        font-weight: 600;
+        line-height: 1.5;
+        height: 6rem;
+        font-family: "ヒラギノ角ゴシック", 'Noto sans JP', sans-serif;
+
+    }
+
+    &__box__description {
+        font-size: 1.6rem;
+        font-weight: 300;
+        line-height: 1.5;
+        margin-top: 3.5rem;
+        font-family: "ヒラギノ角ゴシック", 'Noto sans JP', sans-serif;
+    }
+
+    &__box__description__02 {
+        font-size: 1.6rem;
+        font-weight: 300;
+        line-height: 1.5;
+        margin-top: 2rem;
+        font-family: "ヒラギノ角ゴシック", 'Noto sans JP', sans-serif;
+    }
+
+    // button
+    &__btn__consul {
+        margin-top: 6rem;
+        border: #E8B600;
+        border-radius: 3.5rem;
+        background-color: #E8B600;
+        width: 24.72%;
+        height: 6.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        cursor: pointer;
+    }
+
+    &__btn__txt {
+        padding-left: 1rem;
+        font-size: 2rem;
+        color: #fff;
+        font-weight: 600;
+        line-height: 1.8;
+        font-family: "ヒラギノ角ゴシック", 'Noto sans JP', sans-serif;
+    }
+}
+
+//sec03
+.sec03 {
+    height: 28.01rem;
+
+    &__inner {
+        height: 21.5rem;
+        background-image: url(../images/sec03/sec03_bg_background.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    &__headLine {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 8rem;
+        width: 49.93%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    // 線
+    &__headLine__line {
+        width: 4.45%;
+        height: auto;
+    }
+
+    &__span__01 {
+        font-size: 3.8rem;
+        line-height: 1.5;
+        letter-spacing: 0.05em;
+        font-weight: 600;
+        padding-left: 2.35rem;
+        font-family: "ヒラギノ角ゴシック", 'Noto sans JP', sans-serif;
+    }
+
+    // ロゴ
+    &__ttl--logo {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        width: 28.1rem;
+        height: 3.03rem;
+    }
+
+    &__span__02 {
+        font-size: 3.8rem;
+        line-height: 1.5;
+        letter-spacing: 0.05em;
+        font-weight: 600;
+        padding-right: 1.45rem;
+        font-family: "ヒラギノ角ゴシック", 'Noto sans JP', sans-serif;
+    }
+
+    // 矢印
+    &__headLine--arrow {
+        margin-top: 3.5rem;
+        text-align: center;
+    }
+
+    &__img--arrow {
+        width: 2.4%;
+        height: auto;
+    }
+}
+
+//sec04
+.sec04 {
+    margin-top: 4.9rem;
+    position: relative;
+
+    &__headLine {
+        font-size: 3.8rem;
+        text-align: center;
+        line-height: 1.5;
+        letter-spacing: 0.05em;
+        font-weight: bold;
+        font-family: "ヒラギノ角ゴシック", 'Noto sans JP', sans-serif;
+    }
+
+    // リスト
+    &__list {
+        margin-top: 7.5rem;
+    }
+
+    &__list__wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    // リスト01 //
+    &__listItem__01 {
+        width: 34.03%;
+        margin-right: 6rem;
+        margin-bottom: 9.5rem;
+    }
+
+    // リスト02 //
+    &__listItem__02 {
+        width: 34.03%;
+        margin-left: 6rem;
+        margin-bottom: 9.5rem;
+    }
+
+    &__listItem__ttl__wrapper {
+        display: flex;
+        align-items: center;
+        height: 6.4rem;
+        padding-bottom: 1.6rem;
+        padding-left: 1.5rem;
+    }
+
+    // 数字 //
+    &__listItem__num {
+        font-size: 6.4rem;
+        color: #E8B600;
+        font-family: 'Barlow', 'Noto sans JP', sans-serif;
+    }
+
+    &__listItem__subTtl__wrapper {
+        display: block;
+        padding-left: 2.1rem;
+    }
+
+    &__listItem__ttl {
+        font-size: 2rem;
+        font-family: "ヒラギノ角ゴシック", 'Noto sans JP', sans-serif;
+    }
+
+    &__listItem__subTtl {
+        font-size: 1.4rem;
+        font-family: "ヒラギノ角ゴシック", 'Noto sans JP', sans-serif;
+    }
+
+    &__list__border {
+        border: 1px solid #E0E0E0;
+    }
+
+    &__listItem__description__wrapper {
+        display: flex;
+        align-items: center;
+        padding-top: 1.6rem;
+        padding-left: 1.5rem;
+    }
+
+    &__listItem__description {
+        padding-left: 2rem;
+        font-size: 1.6rem;
+    }
+
+    // 改行 //
+    &__pc {
+        display: block;
+    }
+
+    &__sm {
+        display: none;
+    }
+
+    &__listItem__description {
+        padding-left: 2rem;
+        font-weight: 300;
+        font-size: 1.6rem;
+        line-height: 1.5;
+    }
+
+    &__listItem__border {
+        border: 1px solid #E0E0E0;
+    }
+
+    // 背景画像 //
+    &__bg--left {
+        position: absolute;
+        top: 13rem;
+    }
+}
+
+// sec05 //
+.sec05 {
+    margin-top: 10rem;
+
+    // 背景
+    &__bg__img01 {
+        height: 40.7rem;
+        background-image: url(../images/sec05/sec05_bg01.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+
+    // 吹き出し
+    &__headLine__wrapper {
+        position: absolute;
+        top: 10.5rem;
+        background: #fdfdf4;
+        border-radius: 10rem;
+        width: 42.99%;
+        height: 8.9rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    // 吹き出し線 //
+    &__headLine__wrapper::before {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -15px;
+        border: 15px solid transparent;
+        border-top: 15px solid #fdfdf4;
+    }
+
+    &__headLine {
+        font-size: 3rem;
+        font-weight: 600;
+        font-family: "ヒラギノ角ゴシック", 'Noto sans JP', sans-serif;
+    }
+
+    &__headLine__span {
+        text-decoration: 3px underline wavy #3C280E;
+        text-underline-offset: 4px;
+    }
+
+    &__sm {
+        display: none;
+    }
+
+    // テキスト
+    &__txt--balloon p {
+        font-size: 3rem;
+        font-weight: 600;
+        line-height: 1.9;
+        margin-left: 1.4rem;
+    }
+
+    // 波線
+    &__img__balloon {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        width: 25.773rem;
+        height: 0.338rem;
+    }
+
+    &__img__people {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        top: calc(17.6rem + 7.5rem)
+    }
+
+    // 矢印
+    &__img--arrow {
+        position: absolute;
+        bottom: -5.5rem;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+    // 背景
+    &__img--bg02 {
+        height: 64.1rem;
+        background-image: url(../images/sec05/sec05_bg02.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+
+    &__slideShow {
+        width: 100%;
+        text-align: center;
+        width: 49.2rem;
+        margin: 0 auto;
+        padding-top: 5.1rem;
+    }
+
+
+    //タグ
+    &__slider__button {
+        text-align: left;
+        margin-top: 2rem;
+    }
+
+    &__slider__button__txt {
+        border: 1px solid #E8B600;
+        color: #E8B600 !important;
+        border-radius: 1.5rem;
+        padding: 0.6rem 1.2rem;
+        margin-right: 1rem;
+    }
+
+    &__slider__txt {
+        font-size: 2rem;
+        font-weight: 600;
+        padding-top: 1.7rem;
+        font-family: "ヒラギノ角ゴシック", 'Noto sans JP', sans-serif;
+    }
+
+    &__slider__txt__sm {
+        display: none;
+    }
+
+    &__slide__btn {
+        border: none;
+        background-color: transparent;
+        color: #E8B600;
+        font-size: 1.8rem;
+        margin-top: 4rem;
+    }
+
+    .fa-solid {
+        border: 1px solid #E8B600;
+        border-radius: 50%;
+        color: #E8B600;
+        padding: 1.4rem;
+        margin-right: 2rem;
+    }
+
+    .fa-solid02 {
+        margin-left: 2rem;
+    }
+
+    // worksの画像
+    &__bg--bottom{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+}
+
+//お問い合わせ
+.contact {
+    position: relative;
+
+    &__form__inner {
+        width: 75.25%;
+        margin: 0 auto;
+    }
+
+    &__headLine {
+        margin-top: 10.06rem;
+        font-size: 3.8rem;
+        font-weight: 600;
+        text-align: center;
+        line-height: 1.5;
+        letter-spacing: 0.05em;
+        font-family: "ヒラギノ角ゴシック", 'Noto sans JP', sans-serif;
+    }
+
+    &__sub__headLine {
+        font-size: 1.6rem;
+        text-align: center;
+        margin-top: 4rem;
+        line-height: 1.75;
+        font-family: "ヒラギノ角ゴシック", 'Noto sans JP', sans-serif;
+    }
+
+    // お問い合わせフォーム
+    &__form {
+        width: 67.09%;
+        margin-top: 6rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__form__parts {
+        margin-bottom: 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    // テキストエリア //
+    &__form__parts02 {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .content {
+        padding-top: 1.7rem;
+    }
+
+    &__form__label {
+        font-size: 1.6rem;
+        font-weight: 600;
+        line-height: 1.5;
+    }
+
+    // 名前
+    &__form__label__name {
+        margin-right: 11.7rem;
+        font-family: "ヒラギノ角ゴシック", 'Noto sans JP', sans-serif;
+    }
+
+    &__form__label__email {
+        margin-right: 5.5rem;
+        font-family: "ヒラギノ角ゴシック", 'Noto sans JP', sans-serif;
+    }
+
+    &__form__label__company {
+        margin-right: 11.7rem;
+        font-family: "ヒラギノ角ゴシック", 'Noto sans JP', sans-serif;
+    }
+
+    &__form__label__department {
+        margin-right: 11.7rem;
+        font-family: "ヒラギノ角ゴシック", 'Noto sans JP', sans-serif;
+    }
+
+    &__form__label__content {
+        margin-right: 3.7rem;
+        font-family: "ヒラギノ角ゴシック", 'Noto sans JP', sans-serif;
+    }
+
+    &__form__input {
+        width: 77.3%;
+        height: 4.9rem;
+        border: 1px solid #E0E0E0;
+    }
+
+    // テキストエリア
+
+    &__form__textarea {
+        width: 77.3%;
+        height: 20rem;
+        border: 1px solid #E0E0E0;
+    }
+
+    // placeholder
+    ::placeholder {
+        font-size: 1.6rem;
+        color: #CECECE;
+        line-height: 1.5;
+        padding-left: 2rem;
+        padding-top: 1.7rem;
+    }
+
+    // 個人情報スクロール
+    &__personal__information__scroll {
+        width: 67.09%;
+        height: 27.7rem;
+        overflow: scroll;
+        margin: 0 auto;
+        margin-top: 4rem;
+        border: 1px solid #E0E0E0;
+    }
+
+    &__personal__information__ttl {
+        text-align: center;
+        padding-top: 4rem;
+        font-size: 2rem;
+        font-weight: 600;
+        line-height: 1.8;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        margin-top: 0;
+        font-family: "ヒラギノ角ゴシック", 'Noto sans JP', sans-serif;
+    }
+
+    &__personal__information__description {
+        font-size: 1.6rem;
+        line-height: 1.5;
+        padding-top: 2rem;
+        width: 64.7rem;
+        padding-left: 4rem;
+        margin-top: 0;
+        font-family: "ヒラギノ角ゴシック", 'Noto sans JP', sans-serif;
+    }
+
+    // 同意するボタン
+    &__agree__button {
+        margin-top: 2rem;
+        text-align: center;
+    }
+
+    &__agree__input {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    &__agree__label {
+        font-size: 1.6rem;
+        margin-left: 1rem;
+    }
+
+    // 確認ボタン
+    &__submit__button {
+        text-align: center;
+        margin-top: 4rem;
+    }
+
+    &__submit__btn {
+        border: 1px solid #E8B600;
+        color: #E8B600 !important;
+        font-size: 2rem;
+        line-height: 1.8;
+        padding: 2.3rem 12.8rem 2.2rem 12.8rem;
+        border-radius: 5rem;
+        font-family: "ヒラギノ角ゴシック", 'Noto sans JP', sans-serif;
+    }
+
+    // contactの画像
+    &__bg__bottom {
+        position: absolute;
+        margin-top: 1.9rem;
+        right: 0;
+    }
+}
+
+// フッター
+.siteFooter {
+    margin-top: 11.5rem;
+}
+
+
+// スマートフォン//
+@media screen and (min-width: 375px) and (max-width: 767px) {
+
+    body {
+        max-width: 100%;
+    }
+
+    .sec01 {
+        height: 81.8rem;
+        margin-top: 4rem;
+
+        &__block {
+            margin-top: 0;
+        }
+
+        &__ttl {
+            padding-top: 0;
+        }
+
+        &__headLine {
+            font-size: 2rem;
+            letter-spacing: 0.05em;
+            line-height: 2.083;
+            margin-top: 0;
+        }
+
+        // 文字上の点 //
+        &__dot__headLine {
+            display: inline;
+        }
+
+        &__wrapper {
+            display: block;
+        }
+
+        // 画像 //
+        &__img {
+            margin-top: 3.6rem;
+            text-align: center;
+            padding-right: 0;
+            width: 50.93%;
+            margin-left: auto;
+            margin-right: auto;
+            height: auto;
+        }
+
+        &__img__left {
+            width: 100%;
+            height: auto;
+            margin-right: 0;
+        }
+
+        // リスト //
+        &__list {
+            margin-top: 2.8rem;
+            width: 92%;
+            padding-top: 0;
+        }
+
+        &__list__item {
+            height: 5.5rem;
+        }
+
+        &__list__item:nth-child(5) {
+            height: 7.8rem;
+        }
+
+        &__list__item:nth-child(6) {
+            height: 7.8rem;
+        }
+
+        // リストの文字 //
+        &__list__txt {
+            display: flex;
+            align-items: center;
+            width: 100%;
+        }
+
+        &__list__txt > span {
+            padding-left: 1rem;
+            font-size: 1.8rem;
+            line-height: 2;
+        }
+
+        // チェックアイコン //
+        &__list__checkImg {
+            width: 3.4rem;
+            height: 3.4rem;
+            margin-left: 2rem;
+            padding-left: 0;
+        }
+
+        // PROBLEM画像 //
+        &__bg__img {
+            display: none;
+        }
+
+        // 背景画像 //
+        &__bg__wrapper {
+            height: calc(100% - 79.375rem);
+        }
+    }
+
+    // sec02 //
+    .sec02 {
+        height: 141.5rem;
+
+        &__ttl {
+            max-width: none;
+        }
+
+        .sec02__headLine {
+            font-size: 2.6rem;
+            line-height: 1.38;
+        }
+
+        & mark {
+            background: linear-gradient(transparent 50%, rgba(232,182,0,0.7));
+        }
+
+        &__box__wrapper {
+            padding-top: 3.2rem;
+            display: block;
+        }
+
+        // box01 //
+        &__box__01 {
+            width: calc(100% - 3rem);
+            margin: 0 auto;
+            height: 38rem;
+        }
+
+        &__box__headLine {
+            margin-top: 3.2rem;
+            font-size: 2.2rem;
+            line-height: 1.27;
+        }
+
+        &__box__description {
+            margin-top: 2rem;
+        }
+
+        // box02 //
+        &__box__02 {
+            width: calc(100% - 3rem);
+            margin: 0 auto;
+            height: 38rem;
+            margin-top: 1.6rem;
+            background-color: white;
+        }
+
+        &__box__headLine__02 {
+            font-size: 2.2rem;
+            margin-top: 3.2rem;
+            line-height: 1.45;
+        }
+
+        // box03 //
+        &__box__03 {
+            width: calc(100% - 3rem);
+            margin: 0 auto;
+            height: 38rem;
+            margin-top: 1.6rem;
+        }
+
+        // ボタン //
+        &__btn__consul {
+            position: fixed;
+            bottom: 0;
+            right: 20px;
+            width: 92%;
+            height: 5.5rem;
+            z-index: 100;
+        }
+
+        &__btn__txt {
+            font-size: 1.8rem;
+        }
+
+        &__btn__consul__img {
+            width: 2.4rem;
+        }
+    }
+
+    // sec03 //
+    .sec03 {
+        position: relative;
+        height: 13.55rem;
+
+        &__inner {
+            height: 9.8rem;
+        }
+
+        &__headLine {
+            padding-top: 0;
+            padding-top: 4rem;
+            width: 87.2%;
+        }
+
+        // 線 //
+        &__headLine__line {
+            width: 2.64%;
+            height: auto;
+        }
+
+        // 線 //
+        &__headLine__line {
+            width: 5.29%;
+            height: auto;
+        }
+
+        &__span__01 {
+            font-size: 1.8rem;
+            padding-left: 0.45rem;
+            font-family: "ヒラギノ角ゴシック", 'Noto sans JP', sans-serif;
+        }
+
+        &__span__02 {
+            font-size: 1.8rem;
+            padding-right: 0.35rem;
+            font-family: "ヒラギノ角ゴシック", 'Noto sans JP', sans-serif;
+        }
+
+        &__ttl--logo {
+            width: 43.56%;
+            height: auto;
+        }
+
+        // 矢印 //
+        &__headLine--arrow {
+            margin-top: 2.28rem;
+        }
+
+        &__img--arrow {
+            width: 5.6%;
+            height: auto;
+        }
+    }
+
+    // sec04 //
+    .sec04 {
+        margin-top: 3.85rem;
+
+        // 見出し //
+        &__headLine {
+            font-size: 2.4rem;
+            font-weight: 600;
+            font-family: "ヒラギノ角ゴシック", 'Noto sans JP', sans-serif;
+        }
+
+        // リスト //
+        &__list__wrapper {
+            display: block;
+            width: 92%;
+            margin: 0 auto;
+        }
+
+        &__listItem__ttl__wrapper {
+            padding-bottom: 0.3rem;
+            padding-left: 0;
+        }
+
+        // 1つ目のリスト
+        &__listItem__01 {
+            margin-left: 0;
+            width: 100%;
+            height: 15rem;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 3rem;
+        }
+
+        // ２つ目のリスト
+        &__listItem__02 {
+            margin-left: 0;
+            width: 100%;
+            height: 15rem;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 3rem;
+        }
+
+        &__listItem__wrapper {
+            height: 4.8rem;
+        }
+
+        // 数字 //
+        &__listItem__num {
+            font-size: 4.8rem;
+            font-family: 'Barlow', 'Noto sans JP', sans-serif;
+        }
+
+        &__listItem__subTtl__wrapper {
+            padding-left: 1rem;
+        }
+
+        &__listItem__ttl {
+            font-size: 1.8rem;
+            font-family: "ヒラギノ角ゴシック", 'Noto sans JP', sans-serif;
+        }
+
+        &__listItem__subTtl {
+            font-size: 1.2rem;
+            font-family: "ヒラギノ角ゴシック", 'Noto sans JP', sans-serif;
+        }
+
+        // 説明文 //
+        &__listItem__description__wrapper {
+            width: 100%;
+            display: block;
+            height: auto;
+            padding-left: 0;
+            padding-top: 1.6rem;
+        }
+
+        // 画像非表示 //
+        &__listItem__description__wrapper img {
+            display: none;
+        }
+
+        &__listItem__description {
+            padding-left: 0;
+            font-family: "ヒラギノ角ゴシック", 'Noto sans JP', sans-serif;
+        }
+
+        &__none {
+            display: none;
+        }
+
+        &__pc {
+            display: none;
+        }
+
+        &__sm {
+            display: block;
+        }
+
+        // 背景画像 //
+        &__bg--left {
+            display: none;
+        }
+    }
+
+    // sec05 //
+    .sec05 {
+        margin-top: 8rem;
+
+        // 背景画像 //
+        &__bg__img01 {
+            height: 28.2rem;
+        }
+
+        &__headLine__wrapper {
+            width: 92%;
+            top: 6rem;
+        }
+
+        &__headLine {
+            font-size: 1.8rem;
+            text-align: center;
+            font-family: "ヒラギノ角ゴシック", 'Noto sans JP', sans-serif;
+        }
+
+        &__headLine__span {
+            font-size: 2.4rem;
+            text-decoration: 1.5px underline wavy #3C280E;
+        }
+
+        &__sm {
+            display: block;
+        }
+
+        &__img__people {
+            width: 75.73%;
+            top: 18rem;
+        }
+
+        // 矢印 //
+        &__img--arrow {
+            width: 10.67%;
+            height: auto;
+        }
+
+        // 背景画像 //
+        &__img--bg02 {
+            height: 47.9rem;
+        }
+
+        // スライドショー //
+        &__slideShow {
+            padding-top: 6rem;
+            width: 87.2%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        &__slide__img {
+            width: 100%;
+        }
+
+        // タグ //
+        &__slider__button {
+            margin-top: 1.6rem;
+        }
+
+        &__slider__txt {
+            display: none;
+        }
+
+        &__slider__txt__sm {
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-top: 1.6rem;
+            margin-left: auto;
+            line-height: 1.55;
+            margin-right: auto;
+            display: block;
+        }
+
+        // ボタン //
+        &__btn__wrapper {
+            text-align: center;
+            display: block;
+            margin-top: 3rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 67.28%;
+            margin-left: auto;
+            margin-right: auto;
+            height: 4.5rem;
+        }
+
+        // font-awesome //
+        .fa-solid {
+            color: #E8B600 !important;
+            border: 1px solid #E8B600;
+            border-radius: 50%;
+            padding: 1.4rem;
+            width: 4.5rem;
+            height: 4.5rem;
+            font-size: 1.7rem;
+            margin-right: 2rem;
+        }
+
+        .fa-solid02 {
+            margin-left: 2rem;
+        }
+
+        // スライドショーボタン //
+        &__slide__btn {
+            width: 3.64%;
+            color: #E8B600;
+            height: auto;
+            font-size: 1.8rem;
+            border: none;
+            background-color: transparent;
+            display: flex;
+            justify-content: center;
+            padding: 1.6rem;
+            margin-top: 0;
+        }
+    }
+
+    // contact //
+    .contact {
+        height: 128.2rem;
+
+        &__form__inner {
+            width: 100%;
+        }
+
+        &__headLine {
+            margin-top: 6rem;
+            text-align: center;
+            font-size: 2.4rem;
+            max-width: 100%;
+            font-family: "ヒラギノ角ゴシック", 'Noto sans JP', sans-serif;
+        }
+
+        &__sub__headLine {
+            margin-top: 3.2rem;
+        }
+
+        &__form {
+            margin-top: 4rem;
+            width: 92%;
+        }
+
+        &__form__parts {
+            display: block;
+        }
+
+        // 名前 //
+        &__form__label {
+            margin-right: 0;
+            padding-bottom: 1rem;
+            margin-bottom: 0;
+        }
+
+        &__form__input {
+            width: 100%;
+            height: 4.7rem;
+        }
+
+        // テキストエリア //
+        &__form__parts02 {
+            display: block;
+        }
+
+        &__form__textarea {
+            width: 100%;
+        }
+
+        // 個人情報 //
+        &__personal__information__scroll {
+            width: 92%;
+        }
+
+        &__personal__information__ttl {
+            font-size: 1.8rem;
+        }
+
+        &__personal__information__description {
+            width: 100%;
+            padding-left: 0;
+            padding-top: 4rem;
+        }
+
+        // 同意するボタン //
+        &__agree__button {
+            margin-top: 3.2rem;
+            margin-bottom: 3.2rem;
+        }
+
+        &__agree__label {
+            margin-left: 1rem;
+            margin-bottom: 0;
+        }
+
+        // 確認ボタン //
+        &__submit__button {
+            width: 92%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        &__submit__btn {
+            font-size: 1.8rem;
+            padding: 1.9rem 12rem 1.8rem 12rem;
+        }
+
+        // 背景画像 //
+        &__bg__bottom {
+            display: none;
+        }
+    }
+
+    //フッター //
+    .siteFooter {
+        margin-top: 10rem;
+    }
+}

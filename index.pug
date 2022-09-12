@@ -1,0 +1,449 @@
+//- META INFORMATION
+- const page_title = 'Website Name'
+- const relativePath = '.'
+- const meta_title = 'this is meta title'
+- const meta_keywords = 'this is meta keywords'
+- const meta_description = 'this is meta description'
+- const meta_og_url = 'http://website.com'
+- const currentPage = 'home'
+
+
+//- EXTERNAL LIBRARIES
+- const isJquery = false
+- const isWowEffects = false
+- const isSwiper = false
+- const isBootstrap = false
+- const isPolyfill = true
+
+
+
+
+doctype html
+html(lang="ja")
+    head
+        //- HEAD
+        include ./_inc/_head.pug
+
+
+
+    body.topPage#top
+        //- HEADER
+        include ./_inc/_siteHeader.pug
+
+        //- MAIN CONTENT
+
+        main.siteContent(role="main")
+
+            //- sec01
+
+            section.sec01
+                .sec01__inner
+                    .sec01__block
+                        .sec01__ttl__block
+                            .sec01__ttl
+                                h2.sec01__headLine こんな<span class="sec01__dot__headLine">お</span><span class="sec01__dot__headLine">悩</span><span class="sec01__dot__headLine">み</span>ありませんか？
+                        .sec01__wrapper
+                            .sec01__img
+                                img(src=`./_assets/images/sec01/sec01_bg_woman.png` alt="女性の画像" class="sec01__img__left")
+
+                                //- リスト
+                            ul.sec01__list
+                                li.sec01__list__item
+                                    <p class="sec01__list__txt">
+                                        <img src="./_assets/images/sec01/sec01_icon_check.png" alt="チェックアイコン" class ="sec01__list__checkImg"><span>専門的知識に不安がある</span>
+                                    </p>
+                                li.sec01__list__item
+                                    <p class="sec01__list__txt">
+                                        <img src="./_assets/images/sec01/sec01_icon_check.png" alt="チェックアイコン" class="sec01__list__checkImg"><span>費用が限られている</span>
+                                    </p>
+                                li.sec01__list__item
+                                    <p class="sec01__list__txt">
+                                        <img src="./_assets/images/sec01/sec01_icon_check.png" alt="チェックアイコン" class="sec01__list__checkImg"><span>プロジェクト管理をしてほしい</span>
+                                    </p>
+                                li.sec01__list__item
+                                    <p class="sec01__list__txt">
+                                        <img src="./_assets/images/sec01/sec01_icon_check.png" alt="チェックアイコン" class="sec01__list__checkImg"><span>納期が短く時間がない</span>
+                                    </p>
+                                li.sec01__list__item
+                                    <p class="sec01__list__txt">
+                                        <img src="./_assets/images/sec01/sec01_icon_check.png" alt="チェックアイコン" class="sec01__list__checkImg"><span>エンドクライアントの要望が<br class="sm">曖昧で仕様まで落とし込めない</span>
+                                    </p>
+                                li.sec01__list__item
+                                    <p class="sec01__list__txt">
+                                        <img src="./_assets/images/sec01/sec01_icon_check.png" alt="チェックアイコン" class="sec01__list__checkImg"><span>エンドクライアントにどんどん<br class="sm">実現可能な提案をしてほしい</span>
+                                    </p>
+
+                        //- PROBLEMの画像
+                        .sec01__bg__img
+                            img(src=`./_assets/images/sec01/sec01_bg_problem.png`, alt="PROBLEM" class="sec01__bg__img--bottom")
+
+            //- 背景画像 //
+            .sec01__bg--wrapper--bottom
+                .sec01__bg__wrapper
+                .sec01__bg--arrowBottom
+
+            //- sec02
+
+            section.sec02
+                .sec02__inner
+                    .sec02__block
+                        div.sec02__ttl
+                            h2.sec02__headLine <mark>そのお悩み<br class="sm">ぜひご相談ください！</mark>
+
+                        //- sec02__box
+                        .sec02__box__wrapper
+                            .sec02__box__01
+                                img(src=`./_assets/images/sec02/sec02_bg.png`, alt="ワンストップ開発" class="sec02__box__img")
+                                .sec02__box__txt
+                                    p.sec02__box__headLine ワンストップ開発
+                                    p.sec02__box__description 要件定義（ヒアリング）、課題の抽出、
+                                        br
+                                        | 制作、リリース、保守/運用すべてを
+                                        br
+                                        | 弊社が担当いたします。
+                            //- sec02__box2
+                            .sec02__box__02
+                                img(src=`./_assets/images/sec02/sec02_bg_02.png`, alt="二人三脚で" class="sec02__box__img")
+                                .sec02__box__txt
+                                    p.sec02__box__headLine__02 最初から最後まで
+                                        br
+                                        | お客様と二人三脚で
+                                    p.sec02__box__description__02 ざっくり要件や仕様でも概算見積を
+                                        br
+                                        | お出しし、お客様の課題や要望に
+                                        br
+                                        | 合わせて対応させていただきます。
+
+                            //- sec02__box3
+                            .sec02__box__03
+                                img(src=`./_assets/images/sec02/sec02_bg_03.png`, alt="コミュニケーション力" class="sec02__box__img")
+                                .sec02__box__txt
+                                    p.sec02__box__headLine コミュニケーション力
+                                    p.sec02__box__description お客様もしくは代理店様の場合はエンド
+                                        br
+                                        | クライアント様とのミーティングにも
+                                        br
+                                        | 参加させていただき、全て対応します
+
+                    //- sec02__btn
+                    .sec02__btn__consul
+                        <a href="#"><img src="./_assets/images/sec02/sec02_icon_mail.png" alt="相談してみる" class="sec02__btn__consul__img"></a>
+                        <p class="sec02__btn__txt">相談してみる</p>
+
+            //- sec03
+            section.sec03
+                .sec03__inner
+                    .sec03__block
+                        .sec03__headLine
+                            <img src="./_assets/images/sec03/sec03_icon_line01.png" alt="線" class="sec03__headLine__line">
+                                <span class="sec03__span__01">より</span>
+                            <img src="./_assets/images/header/header_logo.png" alt="ロゴ" class="sec03__ttl--logo">
+                                <span class="sec03__span__02">を知りたい方</span>
+                            <img src="./_assets/images/sec03/sec03_icon_line02.png" alt="線" class="sec03__headLine__line">
+                        .sec03__headLine--arrow
+                            img(src=`./_assets/images/sec03/sec03_icon_arrow.png` alt="矢印" class="sec03__img--arrow")
+
+            //- sec04
+            section.sec04
+                .sec04__inner
+                    .sec04__block
+                        p.sec04__headLine 得意な技術
+
+                        //- リスト
+                        .sec04__list
+
+                            .sec04__list__wrapper
+
+                                //- リスト01 //
+                                .sec04__listItem__01
+                                    .sec04__listItem__ttl__wrapper
+                                        p.sec04__listItem__num 01
+                                        .sec04__listItem__subTtl__wrapper
+                                            p.sec04__listItem__ttl SNS
+                                            p.sec04__listItem__subTtl Social network service
+                                    .sec04__list__border
+                                    .sec04__listItem__description__wrapper
+                                        img(src=`./_assets/images/sec04/sec04_icon_sns.png`, alt="SNS")
+                                        p.sec04__listItem__description どんな活用ができるのか文章ダミーどんな活用<br class="sm">がで<br class="pc">きるのか文章ダミーどんな活用ができるの<br class="sm">か文章ダ<br class="pc">ミーどんな活用ができるのか<span class="sec04__none">文章ダミー</span>
+
+                                //- リスト02 //
+                                .sec04__listItem__02
+                                    .sec04__listItem__ttl__wrapper
+                                        p.sec04__listItem__num 02
+                                        .sec04__listItem__subTtl__wrapper
+                                            p.sec04__listItem__ttl 受注管理システム
+                                            p.sec04__listItem__subTtl Order management system
+                                    .sec04__listItem__border
+                                    .sec04__listItem__description__wrapper
+                                        img(src=`./_assets/images/sec04/sec04_icon_sns.png`, alt="SNS")
+                                        p.sec04__listItem__description どんな活用ができるのか文章ダミーどんな活用<br class="sm">がで<br class="pc">きるのか文章ダミーどんな活用ができるの<br class="sm">か文章ダ<br class="pc">ミーどんな活用ができるのか<span class="sec04__none">文章ダミー</span>
+
+                                //- リスト03 //
+                                .sec04__listItem__01
+                                    .sec04__listItem__ttl__wrapper
+                                        p.sec04__listItem__num 03
+                                        .sec04__listItem__subTtl__wrapper
+                                            p.sec04__listItem__ttl 請求書発行システム
+                                            p.sec04__listItem__subTtl Invoice issuing system
+                                    .sec04__listItem__border
+                                    .sec04__listItem__description__wrapper
+                                        img(src=`./_assets/images/sec04/sec04_icon_invoice.png` alt="invoice issuing system")
+                                        p.sec04__listItem__description どんな活用ができるのか文章ダミーどんな活用<br class="sec04__sm">がで<br class="sec04__pc">きるのか文章ダミーどんな活用ができるの<br class="sec04__sm">か文章ダ<br class="sec04__pc">ミーどんな活用ができるのか<span class="sec04__none">文章ダミー</span>
+
+                                //- リスト04 //
+                                .sec04__listItem__02
+                                    .sec04__listItem__ttl__wrapper
+                                        p.sec04__listItem__num 04
+                                        .sec04__listItem__subTtl__wrapper
+                                            p.sec04__listItem__ttl チャットシステム
+                                            p.sec04__listItem__subTtl Chat system
+                                    .sec04__listItem__border
+                                    .sec04__listItem__description__wrapper
+                                        img(src=`./_assets/images/sec04/sec04_icon_chat.png` alt="chat system")
+                                        p.sec04__listItem__description どんな活用ができるのか文章ダミーどんな活用<br class="sec04__sm">がで<br class="sec04__pc">きるのか文章ダミーどんな活用ができるの<br class="sec04__sm">か文章ダ<br class="sec04__pc">ミーどんな活用ができるのか<span class="sec04__none">文章ダミー</span>
+
+                                //- リスト05
+                                .sec04__listItem__01
+                                    .sec04__listItem__ttl__wrapper
+                                        p.sec04__listItem__num 05
+                                        .sec04__listItem__subTtl__wrapper
+                                            p.sec04__listItem__ttl シフト管理システム
+                                            p.sec04__listItem__subTtl Shift management system
+                                    .sec04__listItem__border
+                                    .sec04__listItem__description__wrapper
+                                        img(src=`./_assets/images/sec04/sec04_icon_shift.png` alt="SNS")
+                                        p.sec04__listItem__description どんな活用ができるのか文章ダミーどんな活用<br class="sec04__sm">がで<br class="sec04__pc">きるのか文章ダミーどんな活用ができるの<br class="sec04__sm">か文章ダ<br class="sec04__pc">ミーどんな活用ができるのか<span class="sec04__none">文章ダミー</span>
+
+                                //- リスト06 //
+                                .sec04__listItem__02
+                                    .sec04__listItem__ttl__wrapper
+                                        p.sec04__listItem__num 06
+                                        .sec04__listItem__subTtl__wrapper
+                                            p.sec04__listItem__ttl 顧客管理システム
+                                            p.sec04__listItem__subTtl Customer management system
+                                    .sec04__listItem__border
+                                    .sec04__listItem__description__wrapper
+                                        img(src=`./_assets/images/sec04/sec04_icon_customer.png` alt="customer management system")
+                                        p.sec04__listItem__description どんな活用ができるのか文章ダミーどんな活用<br class="sec04__sm">がで<br class="sec04__pc">きるのか文章ダミーどんな活用ができるの<br class="sec04__sm">か文章ダ<br class="sec04__pc">ミーどんな活用ができるのか<span class="sec04__none">文章ダミー</span>
+
+                                //- リスト07 //
+                                .sec04__listItem__01
+                                    .sec04__listItem__ttl__wrapper
+                                        p.sec04__listItem__num 07
+                                        .sec04__listItem__subTtl__wrapper
+                                            p.sec04__listItem__ttl 予約システム
+                                            p.sec04__listItem__subTtl Reservation system
+                                    .sec04__listItem__border
+                                    .sec04__listItem__description__wrapper
+                                        img(src=`./_assets/images/sec04/sec04_icon_reservation.png` alt="reservation system")
+                                        p.sec04__listItem__description どんな活用ができるのか文章ダミーどんな活用<br class="sec04__sm">がで<br class="sec04__pc">きるのか文章ダミーどんな活用ができるの<br class="sec04__sm">か文章ダ<br class="sec04__pc">ミーどんな活用ができるのか<span class="sec04__none">文章ダミー</span>
+
+                                //- リスト08 //
+                                .sec04__listItem__02
+                                    .sec04__listItem__ttl__wrapper
+                                        p.sec04__listItem__num 08
+                                        .sec04__listItem__subTtl__wrapper
+                                            p.sec04__listItem__ttl CMS
+                                            p.sec04__listItem__subTtl Contents management system
+                                    .sec04__listItem__border
+                                    .sec04__listItem__description__wrapper
+                                        img(src=`./_assets/images/sec04/sec04_icon_cms.png` alt="cms")
+                                        p.sec04__listItem__description どんな活用ができるのか文章ダミーどんな活用<br class="sec04__sm">がで<br class="sec04__pc">きるのか文章ダミーどんな活用ができるの<br class="sec04__sm">か文章ダ<br class="sec04__pc">ミーどんな活用ができるのか<span class="sec04__none">文章ダミー</span>
+
+                                //- リスト09 //
+                                .sec04__listItem__01
+                                    .sec04__listItem__ttl__wrapper
+                                        p.sec04__listItem__num  09
+                                        .sec04__listItem__subTtl__wrapper
+                                            p.sec04__listItem__ttl バーコード読み取りダミーダミー
+                                            p.sec04__listItem__subTtl Bar code
+                                    .sec04__listItem__border
+                                    .sec04__listItem__description__wrapper
+                                        img(src=`./_assets/images/sec04/sec04_icon_barcode.png` alt="bar code")
+                                        p.sec04__listItem__description どんな活用ができるのか文章ダミーどんな活用<br class="sec04__sm">がで<br class="sec04__pc">きるのか文章ダミーどんな活用ができるの<br class="sec04__sm">か文章ダ<br class="sec04__pc">ミーどんな活用ができるのか<span class="sec04__none">文章ダミー</span>
+
+                                //- リスト09 //
+                                .sec04__listItem__02
+                                    .sec04__listItem__ttl__wrapper
+                                        p.sec04__listItem__num 10
+                                        .sec04__listItem__subTtl__wrapper
+                                            p.sec04__listItem__ttl プッシュ通知
+                                            p.sec04__listItem__subTtl Push notification
+                                    .sec04__listItem__border
+                                    .sec04__listItem__description__wrapper
+                                        img(src=`./_assets/images/sec04/sec04_icon_push.png` alt="push notification")
+                                        p.sec04__listItem__description どんな活用ができるのか文章ダミーどんな活用<br class="sec04__sm">がで<br class="sec04__pc">きるのか文章ダミーどんな活用ができるの<br class="sec04__sm">か文章ダ<br class="sec04__pc">ミーどんな活用ができるのか<span class="sec04__none">文章ダミー</span>
+
+                //- technology画像
+                .sec04__bg--left
+                    img(src=`./_assets/images/sec04/sec04_bg_technology.png`, alt="テクノロジー")
+
+            //- sec05
+            section.sec05
+                //- 背景画像
+                .sec05__bg__img01
+                    .sec05__img--balloon__box
+                        .sec05__headLine__wrapper
+                            p.sec05__headLine 実際にどんなものに<br class="sec05__sm"><span class="sec05__headLine__span">活用されているの？</span>
+                        img(src=`./_assets/images/sec05/sec05_bg_people.png` alt="画像" class="sec05__img__people")
+                        .sec05__img--arrow
+                            img(src=`./_assets/images/sec05/sec05_icon_arrow.png` alt="矢印の画像" class="sec05__icon__arrow")
+
+                //- 背景画像
+                .sec05__img--bg02
+
+                    //- スライドショー
+                    .sec05__slideShow
+                        .sec05__slideShow__inner
+                            img(src=`./_assets/images/sec05/sec05_works_02.png`, alt="" id="area01" class="sec05__slide__img")
+                            //- ボタン //
+                            .sec05__slider__button
+                                a(href="" class="sec05__slider__button__txt") チャット
+                                a(href="" class="sec05__slider__button__txt") 予約システム
+                                a(href="" class="sec05__slider__button__txt") 顧客管理システム
+                                p.sec05__slider__txt 展示会システムテキストテキストテキストテキス
+                                    br
+                                    | トテキストテキストテキストテキストテキスト
+                                p.sec05__slider__txt__sm 展示会システム展示会システムテキスト
+                                    br
+                                    | テキストテキストテキスト
+
+                            //- ボタン //
+                        .sec05__btn__wrapper
+                            <i class="fa-solid fa-arrow-left"></i>
+                            input(type="button" onclick = "sampleImg01()" value = "・" class="sec05__slide__btn")
+                            input(type="button" onclick = "sampleImg01()" value = "・" class="sec05__slide__btn")
+                            input(type="button" onclick = "sampleImg01()" value = "・" class="sec05__slide__btn")
+                            input(type="button" onclick = "sampleImg01()" value = "・" class="sec05__slide__btn")
+                            <i class="fa-solid fa-solid02 fa-arrow-right"></i>
+
+
+
+                    //- //- works 文字
+                    //- .sec05__bg--bottom
+                    //-     img(src=`./_assets/images/sec05/sec05_bg_works.png` alt="works")
+
+            //- CONTACT
+            section.contact
+                .contact__form__inner
+                    .contact__form__block
+                        p.contact__headLine どんなことでも構いせまん！
+                            br
+                            | 一度ご連絡ください！
+                        p.contact__sub__headLine ご相談・お見積りなど、お気軽に<br class="sm">お問合せ下さい。
+                            br
+                            | お問合せ内容の確認後、担当者より<br class="sm">ご連絡させていただきます。
+
+                        //- contact form
+                        .contact__form
+                            .contact__form__parts
+                                label(for="name" class="contact__form__label contact__form__label__name") お名前
+                                input(type="text" class="contact__form__input" id="name" placeholder="お名前を入力してください")
+                            .contact__form__parts
+                                label(for="mail" class="contact__form__label contact__form__label__email") メールアドレス
+                                input(type="email" id="mail" class="contact__form__input" placeholder="メールアドレスを入力してください")
+                            .contact__form__parts
+                                label(for="company" class="contact__form__label contact__form__label__company") 会社名
+                                input(type="text" id="company" class="contact__form__input" placeholder="会社名を入力してください")
+                            .contact__form__parts
+                                label(for="department" class="contact__form__label contact__form__label__department") 部署名
+                                input(type="text" class="contact__form__input" id="department" placeholder="部署名を入力してください")
+                            .contact__form__parts02
+                                label(for="content" class="contact__form__label contact__form__label__content") お問い合わせ内容
+                                textarea(name="content" class="contact__form__textarea")
+
+                        //- 個人情報スクロール
+
+                        .contact__personal__information__scroll
+                            p.contact__personal__information__ttl 【個人情報の保護について】
+                            p.contact__personal__information__description 事業者の名称について
+                                br
+                                | 株式会社コムデ
+                                br
+                                |
+                                br
+                                | 個人情報保護管理者について
+                                br
+                                | 個人情報保護管理者（代表取締役）：深嶋 利之
+                                br
+                                | 電話番号（代表）：03-6907-1958
+                                br
+                                |
+                                br
+                                | 個人情報の利用目的
+                                br
+                                | お問い合わせ・ご相談への対応
+                                br
+                                | 個人情報の第三者提供について
+                                br
+                                | 当社が保有する個人情報は、次の場合を除き、お客様の個人情報を第三者に提供すること
+                                br
+                                | はありません。
+                                br
+                                |
+                                br
+                                | お客様の同意がある場合
+                                br
+                                | 合併、会社分割、営業譲渡その他の事由によって事業の承継が行われる場合
+                                br
+                                | 法令に基づく場合
+                                br
+                                | 人の生命、身体又は財産の保護のために必要がある場合であって、本人の同意を得ること
+                                br
+                                | が困難であるとき
+                                br
+                                | 税務署の職員等の任意調査に対し、個人情報を提出する場合等、国の機関若しくは地方公
+                                br
+                                | 共団体又はその委託を受けた者が法令の定める事務を遂行することに対して協力する必要
+                                br
+                                | がある場合であって、本人の同意を得ることによって当該事務の遂行に支障を及ぼすおそ
+                                br
+                                | れがあるとき
+                                br
+                                | 個人情報の委託について
+                                br
+                                | 個人情報の取り扱いの全部または一部を外部に委託する場合があります。その場合は、当
+                                br
+                                | 社が設定する基準を満たす企業を選定し、機密保持契約等の事項を含む契約を締結した上
+                                br
+                                | で個人情報の取り扱いを委託し、適切な管理、監督を行います。
+                                br
+                                |
+                                br
+                                | 開示対象個人情報の開示等および問合せ窓口について
+                                br
+                                | 当社は、開示対象個人情報※1についてご本人から利用目的の通知、開示、内容の訂正、
+                                br
+                                | 追加または削除、利用の停止、消去及び第三者への提供の停止(「開示等」といいます。)
+                                br
+                                | をご希望される場合は、「個人情報の取り扱いについて　2項」の手続きにより、ご請求
+                                br
+                                | に応じます。
+                                br
+                                | 個人情報のご記入の任意性について
+                                br
+                                | お客様が個人情報をご記入されることは任意ですが、ご記入いただけない場合は、当該サ
+                                br
+                                | ービスをご提供することが出来ない場合があります。
+                                br
+                                | Cookieについて
+                                br
+                                | 当社のホームページを訪問されたお客様がより便利に閲覧していただくためにクッキー
+                                br
+                                | （Cookie）を使用しています。
+
+                        //- contact button
+                        .contact__agree__button
+                            input(type="check" name="agree" id="agree" class="contact__agree__input")
+                            label(for="agree" class="contact__agree__label") 同意する
+
+                        //- 送信ボタン
+                        .contact__submit__button
+                            a(href="" class="contact__submit__btn") 確認画面へ
+
+                        //- contact 背景画像
+                        .contact__bg__bottom
+                            img(src=`./_assets/images/contact/contact__bg.png`, alt="contact")
+
+    //- FOOTER
+    include ./_inc/_siteFooter.pug
